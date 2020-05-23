@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="14.795000000000002px" width="72.38000000000001px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.1, 0.0, 0.0, 1.1, 30.965, 6.765)">
+    <use height="8.9" transform="matrix(0.7807, 0.0, 0.0, 0.7807, -16.6096, -2.7311)" width="69.5" xlink:href="#text0"/>
+    <use height="13.45" transform="matrix(1.0, 0.0, 0.0, 1.0, -28.15, -6.15)" width="46.15" xlink:href="#shape0"/>
+  </g>
+  <defs>
+    <g id="text0" transform="matrix(1.0, 0.0, 0.0, 1.0, -0.5, -2.65)">
+      <g transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)">
+        <use fill="#cccccc" height="8.9" transform="matrix(0.2344, 0.0, 0.0, 0.2344, 0.0, 11.4)" width="69.5" xlink:href="#font_HelveticaNeue_MediumCond_C0"/>
+        <use fill="#cccccc" height="8.9" transform="matrix(0.2344, 0.0, 0.0, 0.2344, 6.25, 11.4)" width="69.5" xlink:href="#font_HelveticaNeue_MediumCond_L0"/>
+        <use fill="#cccccc" height="8.9" transform="matrix(0.2344, 0.0, 0.0, 0.2344, 11.6, 11.4)" width="69.5" xlink:href="#font_HelveticaNeue_MediumCond_E0"/>
+        <use fill="#cccccc" height="8.9" transform="matrix(0.2344, 0.0, 0.0, 0.2344, 17.35, 11.4)" width="69.5" xlink:href="#font_HelveticaNeue_MediumCond_A0"/>
+        <use fill="#cccccc" height="8.9" transform="matrix(0.2344, 0.0, 0.0, 0.2344, 23.6, 11.4)" width="69.5" xlink:href="#font_HelveticaNeue_MediumCond_R0"/>
+      </g>
+    </g>
+    <g id="font_HelveticaNeue_MediumCond_C0">
+      <path d="M20.4 -36.0 Q22.65 -34.8 23.7 -32.95 24.75 -31.1 25.05 -29.2 L25.3 -25.8 25.3 -25.15 19.45 -25.15 19.45 -25.75 Q19.5 -27.5 19.05 -29.15 18.6 -30.8 17.45 -31.85 16.3 -32.9 14.25 -32.85 12.1 -32.9 10.7 -31.75 9.3 -30.55 8.65 -27.4 8.0 -24.25 8.0 -18.4 8.0 -12.6 8.65 -9.35 9.3 -6.15 10.7 -4.85 12.1 -3.6 14.25 -3.65 16.05 -3.7 17.15 -4.55 18.25 -5.45 18.8 -6.8 19.35 -8.15 19.5 -9.65 L19.7 -12.45 19.7 -13.1 25.5 -13.1 25.5 -12.3 Q25.55 -8.95 24.5 -6.0 23.45 -3.05 21.0 -1.2 18.5 0.7 14.25 0.75 9.65 0.75 7.0 -1.3 4.35 -3.3 3.25 -7.55 2.15 -11.75 2.15 -18.25 2.15 -24.8 3.25 -29.0 4.35 -33.2 7.05 -35.25 9.7 -37.25 14.3 -37.25 18.15 -37.2 20.4 -36.0" fill-rule="evenodd" stroke="none"/>
+    </g>
+    <g id="font_HelveticaNeue_MediumCond_L0">
+      <path d="M2.35 -36.55 L8.2 -36.55 8.2 -4.9 22.3 -4.9 22.3 0.0 2.35 0.0 2.35 -36.55" fill-rule="evenodd" stroke="none"/>
+    </g>
+    <g id="font_HelveticaNeue_MediumCond_E0">
+      <path d="M22.8 -36.55 L22.8 -31.6 8.85 -31.6 8.85 -21.5 21.95 -21.5 21.95 -16.55 8.85 -16.55 8.85 -4.9 23.2 -4.9 23.2 0.0 3.05 0.0 3.05 -36.55 22.8 -36.55" fill-rule="evenodd" stroke="none"/>
+    </g>
+    <g id="font_HelveticaNeue_MediumCond_A0">
+      <path d="M9.05 -13.6 L17.7 -13.6 13.5 -31.6 13.4 -31.6 9.05 -13.6 M9.95 -36.55 L17.4 -36.55 27.05 0.0 20.95 0.0 18.7 -8.95 8.0 -8.95 5.65 0.0 -0.45 0.0 9.95 -36.55" fill-rule="evenodd" stroke="none"/>
+    </g>
+    <g id="font_HelveticaNeue_MediumCond_R0">
+      <path d="M19.35 -26.2 Q19.4 -29.1 18.05 -30.65 16.7 -32.15 13.85 -32.15 L8.85 -32.15 8.85 -20.25 13.5 -20.25 Q16.35 -20.3 17.85 -21.85 19.35 -23.4 19.35 -26.2 M20.6 -35.6 Q22.7 -34.7 23.9 -32.6 25.15 -30.55 25.2 -27.1 25.2 -23.55 23.65 -21.1 22.1 -18.7 19.1 -18.15 L19.1 -18.05 Q21.85 -17.85 23.25 -16.1 24.7 -14.4 24.85 -10.6 L24.9 -6.8 25.05 -3.15 Q25.15 -1.85 25.65 -1.1 26.15 -0.35 26.75 0.0 L20.2 0.0 Q19.75 -0.5 19.55 -1.3 19.3 -2.15 19.2 -3.2 L19.05 -6.5 18.95 -10.15 Q18.95 -13.1 17.75 -14.5 16.55 -15.9 13.65 -15.85 L8.85 -15.85 8.85 0.0 3.05 0.0 3.05 -36.55 15.95 -36.55 Q18.5 -36.55 20.6 -35.6" fill-rule="evenodd" stroke="none"/>
+    </g>
+    <g id="shape0" transform="matrix(1.0, 0.0, 0.0, 1.0, 20.65, 6.2)">
+      <path d="M25.0 6.75 L-20.15 6.75 -20.15 -5.7 25.0 -5.7 25.0 6.75 Z" fill="none" stroke="#cccccc" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0"/>
+    </g>
+  </defs>
+</svg>
