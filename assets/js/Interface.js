@@ -52,7 +52,7 @@ Interface.showMessage = function(title, content, callback, options) {
 		}
 	}
 	
-	_messagebox.innerHTML = '<br><br><br><span>'+content+'</span><br><br>'+addition;
+	_messagebox.innerHTML = '<br><br><span>'+content+'</span><br><br>'+addition;
 	
 	document.getElementsByTagName('body')[0].appendChild(_messagebox);
 	

@@ -95,7 +95,7 @@ Mixer.doLoad = function(collection, trackData, skipURIDecode, silent) {
 
 
 Mixer.loadExistingTracks = function() {
-	var built = "<ul>";
+	var built = "";
 
 	Mixer.currentI = 0;
 
@@ -105,13 +105,13 @@ Mixer.loadExistingTracks = function() {
 		st.forEach(function (a) {
 			var splitUp = a.split("||[\/@]/@||");
 
-			built+= "<li><a href=\"#\" onclick=\"Mixer.doLoad('"+encodeURI(splitUp[1])+"', '"+encodeURI(splitUp[2])+"');\">"+splitUp[0]+"</a> <a href=\"#\" onclick=\"Mixer.removeStored("+JSON.parse(localStorage.getItem("savedTracks")).indexOf(a)+");\" class=\"removeButton\">X</a></li>";
+			built+= "<a href=\"#\" onclick=\"Mixer.doLoad('"+encodeURI(splitUp[1])+"', '"+encodeURI(splitUp[2])+"');\">"+splitUp[0]+"</a>&nbsp;&nbsp; <a href=\"#\" onclick=\"Mixer.removeStored("+JSON.parse(localStorage.getItem("savedTracks")).indexOf(a)+");\" class=\"removeButton\">(Delete)</a><br>";
 
 			Mixer.currentI++;
 		});
 	}
 
-	built+= "</ul>";
+	built+= "";
 
 	if(Mixer.currentI ==0) {
 		built = "You have no stored tracks!";
@@ -135,9 +135,19 @@ Mixer.setPack = function(pack) {
 	document.getElementByClass("Latin_class").style.color	= '#000000';
 	document.getElementByClass("Pop_class").style.color		= '#000000';
 	document.getElementByClass("Rock_class").style.color	= '#000000';
-
+	document.getElementByClass("Country_class").style.backgroundImage = "none";
+	document.getElementByClass("Dance_class").style.backgroundImage = "none";
+	document.getElementByClass("Hip-Hop_class").style.backgroundImage = "none";
+	document.getElementByClass("Latin_class").style.backgroundImage = "none";
+	document.getElementByClass("Pop_class").style.backgroundImage = "none";
+	document.getElementByClass("Rock_class").style.backgroundImage = "none";
+	
 	if(document.getElementByClass(pack+"_class") != null) {
+				document.getElementByClass(pack+"_class").style.backgroundImage = "url('assets/images/4.svg')";
+				
 		document.getElementByClass(pack+"_class").style.color = 'red';
+
+		document.getElementByClass(pack+"_class").style.backgroundRepeat= "no-repeat";
 	}
 
 	Packs.show(pack);
@@ -166,17 +176,17 @@ Mixer.getLengthInSeconds = function(row) {
 
 Mixer.getStepsLayout = function(row, size) {
 	if(size <= 2) {
-		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' onclick='Mixer.toggle("+row+", %i%)' alt='' width='18' height='36' selected='0'>";
+		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' onclick='Mixer.toggle("+row+", %i%)' alt=''style='background-size:18px 25px' width='18' height='25' selected='0'>";
 		return(str.repeat(30));
 	}
 
 	if(size == 4) {
-		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' width='36' height='36' onclick='Mixer.toggle("+row+", %i%)' selected='0'>";
+		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' style='background-size:36px 25px' width='36' height='25' onclick='Mixer.toggle("+row+", %i%)' selected='0'>";
 		return(str.repeat(15));
 	}
 
 	if(size == 10) {
-		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' width='90' height='36' onclick='Mixer.toggle("+row+", %i%)' selected='0'>"
+		var str = "<img id='s_"+row+"_%i%' src='assets/images/tabs/2s_clear.png' style='background-size:90px 25px'  width='90' height='25'  onclick='Mixer.toggle("+row+", %i%)' selected='0'>"
 		return(str.repeat(6));
 	}
 
@@ -287,13 +297,17 @@ Mixer.save = function() {
 		}
 	});
 }
+Mixer.help = function() {
+			var content1 = "<img src=\"assets/images/help.png\">";
+			Interface.showMessage("Share this!", content1, null, {yes:true});
+}
 
 Mixer.share = function() {
 	window.lzmalib.compress(
 		JSON.stringify(0+"||[\/@]/@||"+JSON.stringify(StepSequence._set)), 1,
 		function on_compress_complete(str) {
 			var shareable = str.toString().replaceAll(",", " ");
-			var content = "Here is your share key:<br><textarea name=\"textarea\" rows=\"10\" cols=\"40\">" + shareable + "</textarea><br>or, <a href=\"https://is.gd/create.php?url="+encodeURI("https://markehme.github.io/CSMusicMixer/index.html?load="+Base64.encode(shareable))+"\">click here</a> to get a share link.";
+			var content = "Here is your share key:<br><textarea name=\"textarea\" rows=\"10\" cols=\"40\">" + shareable + "</textarea><br>or, <a href=\"https://is.gd/create.php?url="+encodeURI("https://thyelite.com/mixer/index.html?load="+Base64.encode(shareable))+"\">click here</a> to get a share link.";
 			Interface.showMessage("Share this!", content, null, {yes:true});
 		}
 	);

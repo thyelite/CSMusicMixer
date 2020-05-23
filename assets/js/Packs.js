@@ -61,7 +61,7 @@ Packs.setSoundPath = function(pack, path) {
 	this.soundsPaths[pack] = path;
 };
 
-
+new Image().src = "../images/button1.png";
 /**
  * Adds a sound to the pack library, it should pass an object with:
  *  pack_id: 	a unique identification for the pack
@@ -155,8 +155,8 @@ Packs.loadComplete = function() {
 	Packs.loaded++;
 
 	loadingStatus(
-					Packs.loaded      + " / " + Packs.prepared    + " packs loaded. "  + "<br><br> " +
-					Packs.soundsReady + " / " + Packs.soundsTotal + " sounds ready."
+					Packs.loaded      + " / " + Packs.prepared    + "packs loaded. "  + "<p id=\"startmixing\">  " +
+					Packs.soundsReady + " / " + Packs.soundsTotal + " sounds ready.</p>"
 				 );
 
 	Packs.checkReady();
@@ -193,7 +193,7 @@ Packs.checkReady = function() {
  */
 Packs.audioReady = function() {
 	loadingStatus(
-					Packs.loaded      + " / " + Packs.prepared    + " packs loaded. "  + "<br><br> " +
+					Packs.loaded      + " / " + Packs.prepared    + " packs loaded. "  + "<br>  " +
 					Packs.soundsReady + " / " + Packs.soundsTotal + " sounds ready."
 				 );
 
@@ -230,7 +230,7 @@ Packs.show = function(pack) {
  * Builds the collections list
  */
 Packs.buildList = function() {
-	var template = "<span class=\"packname\" onclick=\"Packs.show('%name%');\">%name%</span>";
+	var template = "<span class=\"packnamecountry\" onclick=\"Packs.show('%name%');\">%name%</span>";
 	var master_template = "";
 
 	Packs.getCollections().forEach(function(name) {

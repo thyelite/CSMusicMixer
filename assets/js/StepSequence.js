@@ -167,13 +167,13 @@ StepSequence.buildSequence = function() {
 StepSequence._at = 0;
 
 StepSequence.moveTimeline = function() {
-	StepSequence._at = StepSequence._at+0.055;	
+	StepSequence._at = StepSequence._at+0.112;	
 
 	document.getElementById("timeline-container").style.left = (parseInt(document.getElementById("timeline-container").style.left.replace("px", ""))+1) + 'px';
 	
-	document.getElementById("timeline-seconds").innerHTML = Math.floor(StepSequence._at, 1) + "s";
+	document.getElementById("timeline-seconds").innerHTML = Math.floor(StepSequence._at, 0.5) + "s";
 	
-	if(StepSequence._at == 60) {
+	if(StepSequence._at > 60) {
 		Mixer.playStopButton();
 		StepSequence.stop();
 	}
@@ -205,6 +205,6 @@ StepSequence.stop = function() {
 	
 	StepSequence.gc();
 	
-	document.getElementById("timeline-container").style.left = "220px";
+	document.getElementById("timeline-container").style.left = "213px";
 	document.getElementById("timeline-seconds").innerHTML = "0s";
 }
