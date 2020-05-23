@@ -2,7 +2,31 @@
     font-family: "CG Alpin Gothic No 1";
     src: url('../fonts/CgAlpinGthNo1.ttf');
 }
+
 @font-face {
     font-family: "Coke MIR Gothic";
     src: url('../fonts/CokeMIRGothic.ttf');
 }
+
+@font-face {
+    font-family: "genre";
+    src: url('../fonts/HelveticaNeueMediumCond.ttf');
+}
+
+@font-face {
+    font-family: "instructions";
+    src: url('../fonts/HelveticaNeueExtBlackCond.ttf');
+}
+@font-face {
+    font-family: "timer";
+    src: url('../fonts/191_Helvetica.ttf');
+}
+@font-face {
+    font-family: "button";
+    src: url('../fonts/101_Helvetica-Narrow.ttf');
+}
+@font-face {
+    font-family: "numbers";
+    src: url('../fonts/149_Dirty Ego.ttf');
+}
+

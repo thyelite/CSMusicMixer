@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  * 
- * Copyright (c) 2015 Mark William Hughes
+ * Copyright (c) 2015 Mark William Hughes and edited a lil by yo momma
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -35,41 +35,192 @@ body {
 
 }
 
+
+    
+/*my code additions can be v hacky and i didn't comment anything after mark lmao sorry not sorry*/
+
+#numbers {
+    position:absolute;
+    font-family:numbers;
+    color:#fff;
+    left:6px;
+    top:22px;
+}
+#numbers2 {
+    position:absolute;
+    font-family:numbers;
+    color:#fff;
+    left:5px;
+    top:136px;
+}
+#eqbar {
+    position:absolute;
+	top:52px;
+	left:250px;
+}
+
+#dot {
+    position:absolute;
+padding-left:0.8px;
+}
+
+#doubleclick {
+    position:absolute;
+	top:386px;
+	left:9px;
+}
+#help {
+    position:absolute;
+	top:10px;
+	left:700px;
+}
+
+#bar{
+    position:absolute;
+top:10px;
+size:100%;
+}
+
+
+#scrollahback1 {
+    position:absolute;
+	top:101px;
+	left:16px;
+	line-height:25px;
+}
+#scrollahback2 {
+    position:absolute;
+	top:148px;
+	left:16px;
+	line-height:25px;
+}
+#scrollahback3 {
+    position:absolute;
+	top:195px;
+	left:16px;
+	line-height:25px;
+}
+#scrollahback4 {
+    position:absolute;
+	top:242px;
+	left:16px;
+	line-height:25px;
+}
+#scrollahback5 {
+    position:absolute;
+	top:289px;
+	left:16px;
+	line-height:25px;
+}
+#scrollahback6 {
+    position:absolute;
+	top:336px;
+	left:16px;
+	line-height:25px;
+}
+    
+#arrow {
+	position:absolute;
+	top:115px;
+	left:280px
+}
+#equalizer {
+	position:absolute;
+	top:325px;
+	left:28px
+}
+
+/* loading bar */
+#loading_bar {
+	position:absolute;
+	top:65px;
+	left:111px
+}
+
+/* bottom bit */
+#bottom_bit {
+	position:absolute;
+	top:280px;
+	left:230px
+}
+
+
+/* top right bit */
+#topright_bit {
+	position:absolute;
+	top:-7px;
+	left:477px
+}
+
+#demo_bit {
+	position:absolute;
+	top:12px;
+	left:128px
+}
+
+#ingredients_bit {
+	position:absolute;
+	top:26px;
+	left:531px
+}
+
 /* Steps and welcome text */
 #welcome_text {
-	font-family:"CG Alpin Gothic No 1";
+	font-family:"genre";
+	font-weight: 600;
 	position:absolute;
-	top:90px;
-	left:80px
+	top:99px;
+	left:30px
 }
 
 #welcome_text p {
-	width:400px
+	width:280px;
+    margin: 0    0      0       30;
+    font-size:14px;
 }
 
+
 h1 {
-	padding-top:2px;
-	font-family:"Coke MIR Gothic";
-	font-size:20px
+	padding:8px;
+	font-family:"genre";
+	font-size:14px;
+	font-weight: 200;
+	margin: 1    0      0       0;
 }
 
 h1 em {
-	color:#d33131;
-	font-style:normal
+	color:#eebe2f;
+	font-style:normal;
+		margin: 0    0      0       0;
 }
-
+h2 {
+    
+	padding:6px;
+	font-family:"genre";
+	font-size:14px;
+	font-weight: 200;
+		margin: 8    0      0       0;
+}
+h2 em {
+	color:#eebe2f;
+	font-style:normal;
+		margin: 0    0      0       0;
+}
+h3 {
+	font-family:"instructions";
+	font-size:20px;
+		margin: 0    0      0       14;
+}
 #step1 {
 	background-image:url(../images/1.png);
 	background-repeat:no-repeat;
-	height:20px;
-	padding-left:30px
+	padding-left:30px;
 }
 
 #step2 {
 	background-image:url(../images/2.png);
 	background-repeat:no-repeat;
-	height:20px;
-	padding-left:30px
+	padding-left:30px;
 }
 
 /* main stage */
@@ -83,12 +234,12 @@ h1 em {
 .button1 {
 	width:73px;
 	height:16px;
-	background-image:url(../images/button1.png);
+	background-image:url(../images/button1.gif);
 	text-align:center
 }
 
 .button1:hover {
-	background-image:url(../images/button1_hover.png)
+	background-image:url(../images/button1_hover.gif)
 }
 
 .button2 {
@@ -109,17 +260,20 @@ h1 em {
 }
 
 #loadbox {
-	width:312px;
-	height:181px;
+	width:350px;
+	height:140px;
 	background-image:url(../images/load.png);
 	background-size:cover;
 	margin:auto;
-	text-align:center
+	text-align:center;
+	position:absolute;
+	top:100px;
+	left:220px;
 }
 
 #loadinfo {
-	margin-top:30px;
-	font-size:16px
+
+	font-size:15px
 }
 
 /* Main Stage */
@@ -138,18 +292,18 @@ h1 em {
 
 #backmixer {
 	position:absolute;
-	top:90px;
-	left:10px;
-	opacity:.5;
-	filter:alpha(opacity=50)
+	top:85px;
+	left:9px;
+	opacity:.90;
+	filter:alpha(opacity=90)
 /* For IE8 and earlier */
 }
 
 #row {
 	position:absolute;
-	width:700px;
-	left:70px;
-	height:35px
+	width:800px;
+	left:60px;
+	height:25px
 }
 
 #leftbox {
@@ -162,37 +316,39 @@ h1 em {
 #rightbox {
 	padding-left:20px;
 	height:100%;
-	width:100%
+	width:100%;
+	
 }
 
 .row0 {
-	top:92px
+	top:105px;
 }
 
 .row1 {
-	top:138px
+	top:152px
 }
 
 .row2 {
-	top:182px
+	top:199px
 }
 
 .row3 {
-	top:228px
+	top:246px
 }
 
 .row4 {
-	top:270px
+	top:293px
 }
 
 .row5 {
-	top:315px
+	top:340px
 }
 
 .two .box {
 	width:12px;
-	height:35px;
-	background-image:url(../images/tabs/2s_clear.png)
+	height:25px;
+	background-image:url(../images/tabs/2s_clear.png);
+
 }
 
 /* Create Panel */
@@ -200,29 +356,57 @@ h1 em {
 	font-family:"CG Alpin Gothic No 1";
 	position: absolute;
 	left: 500px;
-	top: 90px;
+	top: 61px;
+	margin: 0    0      0       0;
+width:300px;
+height:130px;
+text-align:center;
+}
+li{
+   	margin: -2    0      -34.4       0;
+
+}
+ul{
+   	margin: 0    0      0       0;
+}
+#startmixing {
+   margin-top:10px; 
+}
+#loading{
+   	margin: -80    0      0       0;
+   		line-height:10px;
+   		padding:0px;
 }
 
 #huge-button {
-	float:left;
-	margin:10px;
-	text-align:center;
-	padding: 5px;
-	width:100px;
-	height:23px;
-	background-image:url(../images/button1.png);
+position:absolute;	
+line-height:20px;
+	margin-top:226px;
+	text-align:left;
+	width:207px;
+	height:54px;
+	background-image:url(../images/button1.gif);
 	background-size: contain;
 	background-repeat: no-repeat;
 	cursor:hand;
 	display: block;
-	
-	font-size:14px;
+	font-size:26px;
 	color:#fff;
 	text-decoration:none;
+	left:20px;
+	top:90px;
+	margin-bottom:50px;
+}
+#import-button {
+position:absolute;	
+top:450px;
+left:600px;
 }
 
+
 #huge-button:hover {
-	background-image:url(../images/button1_hover.png)
+
+	background-image:url(../images/button1_hover.gif)
 }
 
 #huge-button:hover {
@@ -230,72 +414,152 @@ h1 em {
 }
 
 #right_bar ul {
-	list-style-image: url(../images/bullet.png);
+	list-style: none;
+
 }
 
 #right_bar ul li a {
+  display: block;
+        line-height:0px;
 	color: #000000;
 	text-decoration: none;
+	width: 145px;
+	height: 33px;
+	padding-top:18px;
+
 }
 
 #right_bar ul li a:hover {
+      display: block;
+    line-height:0px;
 	color: #000000;
-	text-decoration: underline;
+ background-image:url(../images/4.svg);
+   background-repeat: no-repeat;
+
+
 }
 
 #storedTracksList {
-	overflow: auto;
-	height: 90px;
+    line-height:17px;
+	height: 70px;
+	width:215px;
+	margin: 128    0      0       -18;
+		color: #000000;
 }
-
+#fuck{
+    font-family:"CG Alpin Gothic No 1";
+    position:absolute;
+    top:170px;
+    left:555px;
+}
+#storedTracksList a {
+    		color: #000000;
+    
+}
 /* button suite */
 #button-suite {
 	position: absolute;
-	top: 50px;
-	left: 300px;
+	top: 60px;
+	left: 260px;
 }
 
 #playButton {
 	float: left;
+    padding-left: 11px;
+    padding-bottom:5px;
 	display:block;
-	width: 45px;
-	height: 17px;
+	width:46px;
+	height: 13px;
 	background-repeat: no-repeat;
 }
 
 .s_stopped {
-	background-image: url(../images/play.png);
+	background-image: url(../images/play.svg);
 }
 
 .s_stopped:hover {
-	background-image: url(../images/play_hover.png);
+	background-image: url(../images/play_i.svg);
 }
 
 .s_playing {
-	background-image: url(../images/stop.png);
+	background-image: url(../images/stop.svg);
 }
 
 .s_playing:hover {
-	background-image: url(../images/stop_hover.png);
 }
 
 #smallButton {
-font-family:"CG Alpin Gothic No 1";
+font-family:"button";
+text-decoration: none;
+font-size: 10px;
+padding-top: 1px;
+margin-left:5px;
+margin-bottom:5px;
+	float: left;
+	text-align: center;
+	color: #ccc;
+	display:block;
+	width: 54px;
+	height:26px;
+	  background-size: 50px 14.5px;
+	background-image: url(../images/dark.svg);
+	background-repeat: no-repeat;
+}
+
+#clearButton {
 text-decoration: none;
 font-size: 12px;
 padding-top: 2px;
+padding-left: 10px;
+
 	float: left;
 	text-align: center;
 	color: #fff;
 	display:block;
-	width: 44px;
-	height: 16px;
-	background-image: url(../images/button2.png);
+	width: 47px;
+	height: 13px;
+	background-image: url(../images/clear.svg);
 	background-repeat: no-repeat;
 }
-
+#clearButton:hover {
+	background-image: url(../images/clear_i.svg);
+}
+#saveButton {
+text-decoration: none;
+font-size: 12px;
+padding-top: 2px;
+padding-left: 12px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	display:block;
+	width: 47px;
+	height: 13px;
+	background-image: url(../images/save.svg);
+	background-repeat: no-repeat;
+}
+#saveButton:hover {
+	background-image: url(../images/save_i.svg);
+}
+#startmixButton {
+text-decoration: none;
+font-size: 12px;
+padding-top: 2px;
+padding-left: 10px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	display:block;
+	width: 72px;
+	height: 13px;
+	background-image: url(../images/startnewmix.svg);
+	background-repeat: no-repeat;
+}
+#startmixButton:hover {
+	background-image: url(../images/startnewmix_i.svg);
+}
 #smallButton:hover {
-	background-image: url(../images/button2_hover.png);
+	background-image: url(../images/bigger.svg);
 }
 
 #mediumButton {
@@ -307,12 +571,12 @@ text-decoration: none;
 	display:block;
 	width: 73px;
 	height: 16px;
-	background-image: url(../images/button1.png);
+	background-image: url(../images/button1.gif);
 	background-repeat: no-repeat;
 }
 
 #mediumButton:hover {
-	background-image: url(../images/button1_hover.png);
+	background-image: url(../images/button1_hover.gif);
 }
 
 
@@ -320,15 +584,34 @@ text-decoration: none;
 #timeline-container span {
 	font-family:"CG Alpin Gothic No 1";
 	color: #d33131;
+	margin-right:30px;
+	
+}
+
+#timeline-seconds {
+	position: absolute;
+	font-family:timer;
+	font-style:bold;
+	font-size:12px;
+	left: 435px;
+	top: 4px;
+	color:#fff;
 }
 
 [selected|="0"] {
+   outline: 1px solid #5c574b;
+    outline-offset: -1px;
+    	opacity:.80;
+		filter:alpha(opacity=80);
 }
 
 [selected|="1"] {
     content: url('../images/1px.gif');
     background-image: url(../images/tabs/2s_clear_enabled.png);
-}
+    outline: 1px solid #817674;
+    outline-offset: -1px;
+    z-index : 1;
+    }
 
 
 
@@ -361,36 +644,57 @@ text-decoration: none;
 .no_overflow {
 	margin-top: 0px;
 	padding-top: 0px;
+	
 }
 
 .removeButton { 
 	color: #ba4141;
 }
+button {
+    background: url('../images/left.svg');
+    border:none;
+    outline:none
+}
+#buttonleft {
+    position:absolute;
+    top:410px;
+    left:235px;
+}
+#buttonright {
+    position:absolute;
+    top:410px;
+    left:730px;
+-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 
+}
 /* volume slider */
 input[type=range] {
 	-webkit-appearance: none; 
 	width: 135px; 
+	margin-top: 7px;
+  display: flex;
+
 }
 
 input[type=range]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	border: 1px solid #000000;
-	height: 10px;
-	width: 12px;
-	border-radius: 3px;
-	background: #860000;
-	cursor: pointer;
-	margin-top: -2px; 
-	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 0px solid #000000;
+	height: 14px;
+	width: 30px;
+	border-radius: 0px;
+    background: url('../images/scroller.svg') no-repeat;	
+    cursor: pointer;
+	margin-top: -4px; 
+	box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
 }
 
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
-  height: 10px;
-  width: 12px;
-  border-radius: 3px;
+  height: 11px;
+  width: 26px;
+  border-radius: 0px;
   background: #860000;
   cursor: pointer;
 }
@@ -401,16 +705,16 @@ input[type=range]:focus {
 
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 5px;
+  height: 2px;
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #c40f0f;
+  background: #d3d3d3;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #c40f0f;
+  background: #ffffff;
 }
 
 input[type=range]::-moz-range-track {
@@ -424,50 +728,65 @@ input[type=range]::-moz-range-track {
 }
 
 .trackID {
-	font-family:"CG Alpin Gothic No 1";
+    position:absolute;
+    left:-38px;
+    top:-3px;
+	font-family:"Arial";
     background-color:rgba(0, 0, 0, 0);
-    color: #000000;
+    color: #fff;
     border: none;
     outline: none;
     height: 15px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #packs-area {
 	position: absolute;
 	left: 20px;
 	top: 370px;
-	height: 80px;
-	width: 780px;
-	
+	height: 200px;
+	width: 750px;
 }
 
 #packs-list {
 	position: absolute;
-	height: 80px;
-	width: 320px;
-	overflow-y: scroll;
+	margin-left: 202px;
+	height: 90px;
+	width: 550px;
+		background-image: url(../images/packs.png);
+		background-size:100%;
+	background-repeat:no-repeat;
+	background-position:0px 10px;
+	    
 }
+  #container {
+            overflow-x: scroll;
+            overflow-y:none;
+      	float: left;
+	margin-left: 240px;
+	margin-top:18px;
+      height: 60px;
+      	width: 465px;
 
+    }
 #packs-data {
-	float: left;
-	margin-left: 330px;
-	height: 80px;
-	width: 450px;
-	overflow-y: scroll;
+	height: 40px;
+      	width: 850px;
+
 }
 
 .trackname {
 	float: left;
 	display: block;
 	cursor: hand;
-	padding: 5px;
-	margin: 6px;
+	padding: 0px;
+	margin-top: 23px;
+	margin-left:0px;
 	font-family:"CG Alpin Gothic No 1";
-	background-color: #c90808;
-	color: #fff;
-	width: 25%;
-	
+	background-color: transparent;
+	color: #000;
+	padding-left:15px;
+
 	opacity:.75;
 	filter:alpha(opacity=75);
     -webkit-touch-callout: none;
@@ -476,29 +795,55 @@ input[type=range]::-moz-range-track {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 .trackname:hover {
-	background-color: #a20404;
+	background-color: transparent;
 }
+.packnamecountry {
+    	float: right;
+    display:block;
+	cursor: hand;
+	margin-top:14px;
+	padding-left:17px;
+    padding-right:17px;
+	margin-left: 3px;
+	font-family:"CG Alpin Gothic No 1";
+	color: #fff;
+	height:15%;
+	opacity:.75;
+	filter:alpha(opacity=75);
+	border: 1px solid transparent;
+
+}
+.packnamecountry:hover {
+	border: 1px solid #fff;
+
+}
+
+
 
 .packname {
 	float: left;
-	display: block;
+    display:inline-block;
 	cursor: hand;
-	padding: 5px;
-	margin: 6px;
+	padding: 1px;
+	margin: 12px;
 	font-family:"CG Alpin Gothic No 1";
-	background-color: #000;
+	background-color: transparent;
 	color: #fff;
-	width: 25%;
-	
-	opacity:.75;
-	filter:alpha(opacity=75)
+	width: 5%;
+	opacity:.65;
+	filter:alpha(opacity=75);
+	border: 1px solid white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .packname:hover {
-	background-color: #c1a371;
+	background-color: transparent;
 }
 
 [draggable=true] {
