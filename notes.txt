@@ -1,0 +1,19 @@
+must-complete to achieve pure and faithful recreation notes
+
+timeline-seconds needs to be formatted as 00:00 and should continue indefinitely instead of resetting at 60s. the bar should just loop indefinitely.
+
+back and share buttons need the fonts fixed, or just removed altogether. would be cool to add a download mp3 option.
+
+The packs-list is in reverse-alphabetical order. I.e. rock, pop, Latin, hip-hop, etc. But originally it was in alphabetical order. should be able to do this at file:Packs.js line 233 Packs.buildList
+
+on the web kit slider.. i would like to slide the "scroller" button all the way to the left but i couldn't get it configured to let me slide it that far. not compatible with firefox.
+
+i can't find any of the instrument sprites.. just the ones on this mixer image. which is the only one i could find of the old mixer. so we are using shitty sprites and varying file qualities all over. which is how the OG coke music was in a lot of ways like the bg. 
+
+i would like to make it so the red circle around the "genre" list restarts on every hover. it's set as png but i have a gif uploaded under the same file name. it's not possible with css. needs to be js but i don't speak that
+
+your mixes lists need an additional red circle
+
+when you press back, the on-hover background image no longer works. the red circle
+
+the wavelength 2s_clear images.. i modified them to scale instead of cropping. but that results in most of the wavelengths looking thinner and not as bold compared to the original. 
