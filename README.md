@@ -1,9 +1,9 @@
 # CSMusicMixer
-A recreation and modernisation of the MyCoke Music Mixer licensed under The MIT License.
+A recreation and modernisation of the Coke Music 1.0 Music Mixer licensed under The MIT License.
 
-You can view it on GitHub pages here: https://markehme.github.io/CSMusicMixer/index.html
+You can view it here: www.thyelite.com/mixer
 
-**please note** this will be riddled with bugs, feel free to report them.
+**please note** this will be riddled with bugs, feel free to report them. Especially this fork, because I am especially sloppy with my code.
 
 # Supported Browers
 * Google Chrome v39+ - developed on Google Chrome v39+ and is deemed to work
